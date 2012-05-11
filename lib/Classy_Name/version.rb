@@ -1,1 +1,1 @@
-Classy_Name_Version = "0.1.0"
+Classy_Name_Version = "0.1.1"
