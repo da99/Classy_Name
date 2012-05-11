@@ -2,7 +2,7 @@
 Classy\_Name
 ================
 
-An alternative to [classify gem](https://github.com/oleander/classify).
+An alternative to the [classify gem](https://github.com/oleander/classify).
 The difference is this one does not use proper camel-case:
 
     abc_school_house_rock
