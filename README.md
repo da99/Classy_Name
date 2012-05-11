@@ -2,7 +2,11 @@
 Classy\_Name
 ================
 
-A Ruby gem.
+An alternative to [classify gem](https://github.com/oleander/classify).
+The difference is this one does not use proper camel-case:
+
+    abc_school_house_rock
+    --> Abc_School_House_Rock
 
 Installation
 ------------
@@ -14,8 +18,14 @@ Usage
 
     require "Classy_Name"
     
-    Classy_Name
+    Classy_Name 'my_classy_string'
+    # --> 'My_Classy_String'
 
+    Classy_Name '123abc'
+    # ---> 'Abc'
+
+    Classy_Name 'abc.123'
+    # ---> 'Abc_123'
 
 Run Tests
 ---------
@@ -24,10 +34,4 @@ Run Tests
     cd Classy_Name
     bundle update
     bundle exec bacon spec/lib/main.rb
-
-"I hate writing."
------------------------------
-
-If you know of existing software that makes the above redundant,
-please tell me. The last thing I want to do is maintain code.
 
